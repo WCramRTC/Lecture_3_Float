@@ -14,6 +14,33 @@ namespace Lecture_3_Float
         static void Main(string[] args)
         {
 
+
+        } // Main
+
+        public static void TryCatch()
+        {
+            int number = 0;
+            try
+            {
+                // try / catch
+                Console.Write("Please enter a whole number: ");
+                string userInput = Console.ReadLine();
+                number = int.Parse(userInput);
+
+            } // End of try
+            catch
+            {
+                Console.WriteLine("The format was invalid");
+            }
+
+            // try / catch
+
+            Console.WriteLine(number);
+        } // TryCatch
+
+        public static void FloatAndParseExample()
+        {
+
             // float point numbers
             // for floating numbers, end with an f
             float sliceOfPizza = .25f;
@@ -68,14 +95,8 @@ namespace Lecture_3_Float
             numOfStudents++; // This increments by 1
             numOfStudents--; // This decrements ( subtracts ) 1
 
-            
+        } //FloatAndParseExample
 
-
-            // try / catch
-
-
-
-        } // Main
 
     } // class
 
