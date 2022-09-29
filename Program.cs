@@ -23,15 +23,53 @@ namespace Lecture_3_Float
 
             double coordinateX = 52.5;
 
-            Console.Write("Enter a number: ");
-            string userInput = Console.ReadLine();
-            int usersNumber = int.Parse(userInput);
+            //Console.Write("Enter a number: ");
+            //string userInput = Console.ReadLine();
+            //float usersNumber = float.Parse(userInput);
 
-            Console.WriteLine(usersNumber + usersNumber);
+            //Console.WriteLine(usersNumber + usersNumber);
 
             //int userNumber2 = int.Parse(Console.ReadLine());
 
             // casting
+            int a = 500;
+            double b = a;
+            Console.WriteLine(b);
+            // From whole number to decimal is implict casting
+            // Because the change is implied
+
+            double c = 500.10;
+            int d = (int)c;
+            Console.WriteLine(d);
+
+            // Assignment Operators
+            int grade = 10;
+            grade = grade + 5;
+            grade = grade / 3;
+
+            double price = 10;
+            price = price + 3;
+            price = price - 5;
+
+            int gradeAO = 10;
+
+            //
+            double numOfStudents = 3;
+            Console.WriteLine(numOfStudents);
+
+            //numOfStudents = numOfStudents - 1;
+            numOfStudents -= 1;
+            Console.WriteLine(numOfStudents);
+
+            numOfStudents += 3;
+            Console.WriteLine(numOfStudents);
+
+            // +=, -=, *=, /=, %=
+            numOfStudents++; // This increments by 1
+            numOfStudents--; // This decrements ( subtracts ) 1
+
+            
+
 
             // try / catch
 
