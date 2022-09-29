@@ -13,9 +13,24 @@ namespace Lecture_3_Float
     {
         static void Main(string[] args)
         {
+            double subtotal = 5.55;
+            double tax = subtotal * .1;
+            double total = subtotal + tax;
+
+            Console.WriteLine(
+                $"SubTotal: {subtotal.ToString("c")}\n" +
+                $"Tax: {tax.ToString("c")}\n" +
+                $"Total: {total.ToString("c")}");
 
 
         } // Main
+
+        public static void DecimalExample ()
+        {
+            decimal dollarAmount = 5.494892094092834089234m;
+            dollarAmount = Decimal.Round(dollarAmount, 2);
+            Console.WriteLine(dollarAmount.ToString("c"));
+        } // Decimal
 
         public static void TryCatch()
         {
@@ -79,6 +94,10 @@ namespace Lecture_3_Float
             price = price - 5;
 
             int gradeAO = 10;
+
+            double amountD = double.Parse("5.99");
+            float amountF = float.Parse("43.234543");
+            decimal dollarAmouint = decimal.Parse("34.324");
 
             //
             double numOfStudents = 3;
